@@ -34,23 +34,22 @@ function displayQuestion(){
 function nextQuestion(){
     if(currentQuestion<30){
     currentQuestion++;
-    resetOption();
+    conditionalResetOption();
     displayQuestion();
     }
 }
 
 function previousQuestion(){
     if(currentQuestion>1){
-        resetOption();
+        conditionalResetOption();
         currentQuestion--;
         displayQuestion();
         }
 }
 
 function goToQuestion(qno){
-    
-    setCurrentQuestion(qno);
     conditionalResetOption();
+    setCurrentQuestion(qno);
     displayQuestion();
 
 }
@@ -88,17 +87,12 @@ function resetOption(){
 
 function conditionalResetOption(){
 
-    if(localStorage.getItem(currentSubject+currentQuestion) = "N"){
-        resetOption();
-    } else{
         document.getElementById("optionA").style.background= "#e6e2c3";
         document.getElementById("optionB").style.background= "#e6e2c3";
         document.getElementById("optionC").style.background= "#e6e2c3";
         document.getElementById("optionD").style.background= "#e6e2c3";
         document.getElementById("savebutton").disabled = true;
-        localStorage.setItem(currentSubject+currentQuestion, currentOption);
-        document.getElementById("m"+currentQuestion).style.background= "#00ffff" ;
-    }
+    
 }
 
 function saveOption(){
