@@ -1,7 +1,10 @@
 body {
     margin: 0;
+    background-image: url("assets/bg1.png");
+
 }
 .container{
+    
     width: 100vw;
     height: 100vh;
 
@@ -17,7 +20,7 @@ body {
 
 .container div{
     padding: 10px;
-    border: 1px solid #000000
+    border: 0px solid #ffffff
 }
 
 .butten{
@@ -32,7 +35,7 @@ body {
 
     height: 45px;
     width: 60px ;
-    background-color: aqua;
+    background-color: #00ffff;
     border: none;
     color: black;
     padding: 7px 15px;

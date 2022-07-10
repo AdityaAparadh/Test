@@ -12,3 +12,8 @@ function setCurrentOption(op){
     document.getElementById("option").style.background-color;
 }.
 var currentOption = N;
+
+d7b8ff
+
+document.getElementById("m"+currentQuestion).style.background= "#00ffff" ;
+document.getElementById("m"+currentQuestion).style.background= "#8bfa50";

@@ -4,9 +4,9 @@
         <link rel="stylesheet" href="assets/stylesheet.css">
         
     </head>
-    <body bgcolor="#d7b8ff">
+    <body>
 
-    <div class="container">
+    <div style="background-image: url('assets/bg.png');" class="container" >
         <div id="subject" class="header"> EXAM 
         </div>
 
@@ -20,36 +20,36 @@ Subject Palette: <br><br>
 <br><br>
 Question Palette: <br><br>
 
-<button onclick="goToQuestion(1)" class="button" type="button"> 1</button>
-<button onclick="goToQuestion(2)" class="button" type="button"> 2</button>
-<button onclick="goToQuestion(3)" class="button" type="button"> 3</button> <br>
-<button onclick="goToQuestion(4)" class="button" type="button"> 4</button>
-<button onclick="goToQuestion(5)" class="button" type="button"> 5</button>
-<button onclick="goToQuestion(6)" class="button" type="button"> 6</button>  <br>
-<button onclick="goToQuestion(7)" class="button" type="button"> 7</button>
-<button onclick="goToQuestion(8)" class="button" type="button"> 8</button>
-<button onclick="goToQuestion(9)" class="button" type="button"> 9</button> <br>
-<button onclick="goToQuestion(10)" class="button" type="button"> 10</button>
-<button onclick="goToQuestion(11)" class="button" type="button"> 11</button>
-<button onclick="goToQuestion(12)" class="button" type="button"> 12</button> <br>
-<button onclick="goToQuestion(13)" class="button" type="button"> 13</button>
-<button onclick="goToQuestion(14)" class="button" type="button"> 14</button>
-<button onclick="goToQuestion(15)" class="button" type="button"> 15</button> <br>
-<button onclick="goToQuestion(16)" class="button" type="button"> 16</button>
-<button onclick="goToQuestion(17)" class="button" type="button"> 17</button>
-<button onclick="goToQuestion(18)" class="button" type="button"> 18</button> <br>
-<button onclick="goToQuestion(19)" class="button" type="button"> 19</button>
-<button onclick="goToQuestion(20)" class="button" type="button"> 20</button>
-<button onclick="goToQuestion(21)" class="button" type="button"> 21</button> <br>
-<button onclick="goToQuestion(22)" class="button" type="button"> 22</button>
-<button onclick="goToQuestion(23)" class="button" type="button"> 23</button>
-<button onclick="goToQuestion(24)" class="button" type="button"> 24</button> <br>
-<button onclick="goToQuestion(25)" class="button" type="button"> 25</button>
-<button onclick="goToQuestion(26)" class="button" type="button"> 26</button>
-<button onclick="goToQuestion(27)" class="button" type="button"> 27</button> <br>
-<button onclick="goToQuestion(28)" class="button" type="button"> 28</button>
-<button onclick="goToQuestion(29)" class="button" type="button"> 29</button>
-<button onclick="goToQuestion(30)" class="button" type="button"> 30</button> <br>
+<button onclick="goToQuestion(1)" class="button" type="button" id="m1"> 1</button>
+<button onclick="goToQuestion(2)" class="button" type="button"  id="m2"> 2</button>
+<button onclick="goToQuestion(3)" class="button" type="button" id="m3"> 3</button> <br>
+<button onclick="goToQuestion(4)" class="button" type="button" id="m4"> 4</button>
+<button onclick="goToQuestion(5)" class="button" type="button" id="m5"> 5</button>
+<button onclick="goToQuestion(6)" class="button" type="button" id="m6"> 6</button>  <br>
+<button onclick="goToQuestion(7)" class="button" type="button" id="m7"> 7</button>
+<button onclick="goToQuestion(8)" class="button" type="button" id="m8"> 8</button>
+<button onclick="goToQuestion(9)" class="button" type="button" id="m9"> 9</button> <br>
+<button onclick="goToQuestion(10)" class="button" type="button" id="m10"> 10</button>
+<button onclick="goToQuestion(11)" class="button" type="button" id="m11"> 11</button>
+<button onclick="goToQuestion(12)" class="button" type="button" id="m12"> 12</button> <br>
+<button onclick="goToQuestion(13)" class="button" type="button" id="m13"> 13</button>
+<button onclick="goToQuestion(14)" class="button" type="button" id="m14"> 14</button>
+<button onclick="goToQuestion(15)" class="button" type="button" id="m15"> 15</button> <br>
+<button onclick="goToQuestion(16)" class="button" type="button" id="m16"> 16</button>
+<button onclick="goToQuestion(17)" class="button" type="button" id="m17"> 17</button>
+<button onclick="goToQuestion(18)" class="button" type="button" id="m18"> 18</button> <br>
+<button onclick="goToQuestion(19)" class="button" type="button" id="m19"> 19</button>
+<button onclick="goToQuestion(20)" class="button" type="button" id="m20"> 20</button>
+<button onclick="goToQuestion(21)" class="button" type="button" id="m21"> 21</button> <br>
+<button onclick="goToQuestion(22)" class="button" type="button" id="m22"> 22</button>
+<button onclick="goToQuestion(23)" class="button" type="button" id="m23"> 23</button>
+<button onclick="goToQuestion(24)" class="button" type="button" id="m24"> 24</button> <br>
+<button onclick="goToQuestion(25)" class="button" type="button" id="m25"> 25</button>
+<button onclick="goToQuestion(26)" class="button" type="button" id="m26"> 26</button>
+<button onclick="goToQuestion(27)" class="button" type="button" id="m27"> 27</button> <br>
+<button onclick="goToQuestion(28)" class="button" type="button" id="m28"> 28</button>
+<button onclick="goToQuestion(29)" class="button" type="button" id="m29"> 29</button>
+<button onclick="goToQuestion(30)" class="button" type="button" id="m30"> 30</button> <br>
 
 
         </div>
@@ -76,7 +76,7 @@ Question Palette: <br><br>
 
         <button onclick="previousQuestion()" class="buttion"> Previous </button>     
         <button onclick="nextQuestion()" class="buttion"> Skip </button> 
-        <button onclick="" class="buttion"> Save and Next </button>
+        <button onclick="saveOption()" class="buttion" id="savebutton"> Save and Next </button>
 
 
     </div>
