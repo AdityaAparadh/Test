@@ -1,2 +1,14 @@
 
 const mytime = setTimeout(previousQuestion, 2000)
+
+#6bffa1
+
+
+#d4d4d4
+
+
+function setCurrentOption(op){
+    currentOption = op;
+    document.getElementById("option").style.background-color;
+}.
+var currentOption = N;

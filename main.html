@@ -4,15 +4,22 @@
         <link rel="stylesheet" href="assets/stylesheet.css">
         
     </head>
-    <body bgcolor="#d4d4d4">
+    <body bgcolor="#d7b8ff">
 
     <div class="container">
         <div id="subject" class="header"> EXAM 
-
         </div>
 
+        <div id="safeTimerDisplay" class="timer"> TIMER </div>
+
         <div class="butten"> 
-            Question Palette: <br><br><br>
+Subject Palette: <br><br>
+<button class="button2"> Mathematics </button>
+<button class="button2"> Physics </button>
+<button class="button2"> Chemistry </button>
+<br><br>
+Question Palette: <br><br>
+
 <button onclick="goToQuestion(1)" class="button" type="button"> 1</button>
 <button onclick="goToQuestion(2)" class="button" type="button"> 2</button>
 <button onclick="goToQuestion(3)" class="button" type="button"> 3</button> <br>
@@ -55,12 +62,12 @@
     <img id="mainQuestionDisplay" src="">
     <br><br><br>
 
-    <form>
-        <input label="opA" type="radio" value="A"> <label for="opA"> A </label>
-        <input label="opB" type="radio" value="B"> <label for="opB"> B </label>
-        <input label="opC" type="radio" value="C"> <label for="opC"> C </label>
-        <input label="opD" type="radio" value="D"> <label for="opD"> D </label>
-    </form>
+   <button onclick="setCurrentOption('A')" class="buttonoption" id="optionA">A</button> <br>
+   <button onclick="setCurrentOption('B')" class="buttonoption" id="optionB">B</button> <br>
+   <button onclick="setCurrentOption('C')" class="buttonoption" id="optionC">C</button> <br>
+   <button onclick="setCurrentOption('D')" class="buttonoption" id="optionD">D</button> <br>
+
+   <button class="button2" onclick="resetOption()" > Clear Response </button>
     
     
     
