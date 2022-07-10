@@ -1,0 +1,2 @@
+
+const mytime = setTimeout(previousQuestion, 2000)

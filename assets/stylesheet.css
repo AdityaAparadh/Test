@@ -67,3 +67,14 @@ body {
     grid-row-end: 4;
 }
 
+.buttion{
+    border-radius: 10px;
+    background-color: #ff5757;
+    border: none;
+    color: white;
+    height: 70% ;
+    width: 20% ;
+    margin-left: 100px ;
+    margin-right: 100px ;
+    cursor: pointer;
+}

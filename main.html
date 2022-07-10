@@ -12,36 +12,37 @@
         </div>
 
         <div class="butten"> 
-<button class="button" type="button"> 1</button>
-<button class="button" type="button"> 2</button>
-<button class="button" type="button"> 3</button> <br>
-<button class="button" type="button"> 4</button>
-<button class="button" type="button"> 5</button>
-<button class="button" type="button"> 6</button>  <br>
-<button class="button" type="button"> 7</button>
-<button class="button" type="button"> 8</button>
-<button class="button" type="button"> 9</button> <br>
-<button class="button" type="button"> 10</button>
-<button class="button" type="button"> 11</button>
-<button class="button" type="button"> 12</button> <br>
-<button class="button" type="button"> 13</button>
-<button class="button" type="button"> 14</button>
-<button class="button" type="button"> 15</button> <br>
-<button class="button" type="button"> 16</button>
-<button class="button" type="button"> 17</button>
-<button class="button" type="button"> 18</button> <br>
-<button class="button" type="button"> 19</button>
-<button class="button" type="button"> 20</button>
-<button class="button" type="button"> 21</button> <br>
-<button class="button" type="button"> 22</button>
-<button class="button" type="button"> 23</button>
-<button class="button" type="button"> 24</button> <br>
-<button class="button" type="button"> 25</button>
-<button class="button" type="button"> 26</button>
-<button class="button" type="button"> 27</button> <br>
-<button class="button" type="button"> 28</button>
-<button class="button" type="button"> 29</button>
-<button class="button" type="button"> 30</button> <br>
+            Question Palette: <br><br><br>
+<button onclick="goToQuestion(1)" class="button" type="button"> 1</button>
+<button onclick="goToQuestion(2)" class="button" type="button"> 2</button>
+<button onclick="goToQuestion(3)" class="button" type="button"> 3</button> <br>
+<button onclick="goToQuestion(4)" class="button" type="button"> 4</button>
+<button onclick="goToQuestion(5)" class="button" type="button"> 5</button>
+<button onclick="goToQuestion(6)" class="button" type="button"> 6</button>  <br>
+<button onclick="goToQuestion(7)" class="button" type="button"> 7</button>
+<button onclick="goToQuestion(8)" class="button" type="button"> 8</button>
+<button onclick="goToQuestion(9)" class="button" type="button"> 9</button> <br>
+<button onclick="goToQuestion(10)" class="button" type="button"> 10</button>
+<button onclick="goToQuestion(11)" class="button" type="button"> 11</button>
+<button onclick="goToQuestion(12)" class="button" type="button"> 12</button> <br>
+<button onclick="goToQuestion(13)" class="button" type="button"> 13</button>
+<button onclick="goToQuestion(14)" class="button" type="button"> 14</button>
+<button onclick="goToQuestion(15)" class="button" type="button"> 15</button> <br>
+<button onclick="goToQuestion(16)" class="button" type="button"> 16</button>
+<button onclick="goToQuestion(17)" class="button" type="button"> 17</button>
+<button onclick="goToQuestion(18)" class="button" type="button"> 18</button> <br>
+<button onclick="goToQuestion(19)" class="button" type="button"> 19</button>
+<button onclick="goToQuestion(20)" class="button" type="button"> 20</button>
+<button onclick="goToQuestion(21)" class="button" type="button"> 21</button> <br>
+<button onclick="goToQuestion(22)" class="button" type="button"> 22</button>
+<button onclick="goToQuestion(23)" class="button" type="button"> 23</button>
+<button onclick="goToQuestion(24)" class="button" type="button"> 24</button> <br>
+<button onclick="goToQuestion(25)" class="button" type="button"> 25</button>
+<button onclick="goToQuestion(26)" class="button" type="button"> 26</button>
+<button onclick="goToQuestion(27)" class="button" type="button"> 27</button> <br>
+<button onclick="goToQuestion(28)" class="button" type="button"> 28</button>
+<button onclick="goToQuestion(29)" class="button" type="button"> 29</button>
+<button onclick="goToQuestion(30)" class="button" type="button"> 30</button> <br>
 
 
         </div>
@@ -51,13 +52,27 @@
        <div id="questionNumber">hi</div>
         
     
-    <img id="mainQuestion" src="assets/questions/1.png">
-    
+    <img id="mainQuestionDisplay" src="">
+    <br><br><br>
+
+    <form>
+        <input label="opA" type="radio" value="A"> <label for="opA"> A </label>
+        <input label="opB" type="radio" value="B"> <label for="opB"> B </label>
+        <input label="opC" type="radio" value="C"> <label for="opC"> C </label>
+        <input label="opD" type="radio" value="D"> <label for="opD"> D </label>
+    </form>
     
     
     
     </div>
-    <div class="footer">FOOTER</div>
+    <div class="footer">
+
+        <button onclick="previousQuestion()" class="buttion"> Previous </button>     
+        <button onclick="nextQuestion()" class="buttion"> Skip </button> 
+        <button onclick="" class="buttion"> Save and Next </button>
+
+
+    </div>
     <script src="assets/backend.js"></script>
     </body>
 </html>
